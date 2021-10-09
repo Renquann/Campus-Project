@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+		<style type="text/css">
+			.body{
+				height:70px;
+				width: 100%;
+				margin-top: 20px;
+			}
+			.body .username{
+				background-color: gainsboro;
+				margin-top: 50px;
+				justify-content: center;
+			}
+			.body .username .touxiang{
+				width: 50px;
+				height: 50px;
+				border-radius: 50px;
+				background-image: url(img/家.png);
+				background-size: cover;
+				float: left;
+				margin:10px;
+				
+			}
+			
+			.username .name{
+				font-size: 20px;
+				line-height: 80px;
+				color: black;
+				float: left;
+				margin-left: 10px;
+			}
+			.fabuxinxi{
+				margin-top: 20px;
+			}
+			.fabuxinxi .biaoti{
+				font-size: 15px;
+				margin-top: 5px;
+				border-radius: 15px;
+			}
+			.mui-bar{
+				margin: 10px;
+			}
+		</style>
+		<script type="text/javascript">
+			function baocun(){
+				alert("保存成功");
+			}
+			function fabu(){
+				alert("发布成功");
+				window.open("shouye1.html");
+			}
+				
+			function fabushezhi(){
+				window.open("fabushezhi");
+			}
+		</script>
+	</head>
+
+	<body>
+		<script src="js/mui.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">发布(工作类)</h1>
+			<span style="float: left; margin-top: 13px;font-size: 10px;">返回</span>
+			<div class="dian" style="margin-top: 4px;"onclick="fabushezhi()">
+				<i style="display:inline-block; width:8px; height:8px; background-color:#ccc; margin:1px; border-radius:50%;float: right;margin-top: 15px;"></i>
+				<i style="display:inline-block; width:8px; height:8px; background-color:#666; margin:1px; border-radius:50%;float: right; margin-top: 15px;"></i>
+				<i style="display:inline-block; width:8px; height:8px; background-color:#ccc; margin:1px; border-radius:50%;float: right;margin-top: 15px;"></i>
+			</div>
+		</header>
+		
+		<nav class="mui-bar mui-bar-tab" style="text-align: center;width: 96%;margin-left: 8px;border-radius: 20px;">
+			<button type="button" class="mui-btn mui-btn-red" style="width: 25%;" onclick="baocun()">保存</button>
+			<button type="button" class="mui-btn mui-btn-red " style="width: 25%;margin-left: 60px;"onclick="fabu()">发布 </button>
+		</nav>
+		
+		<div class="body">
+			<div class="username">
+				<span class="touxiang "></span>
+				<span class="name">风</span>
+			</div>
+		</div>
+		
+		<div class="fabuxinxi" style="text-align: center;">
+			<input type="text" class="biaoti" value="标题" style="height: 35px; width: 80%;"/>
+			<input type="text" class="biaoti" value="发布信息" style="height: 100px;width: 80%;"/>
+			<input type="text" class="biaoti" value="添加图片说明" style="height: 150px;width: 80%;"/>
+		</div>
+		
+		<div class="jiage"style="margin-top: 40px;" >
+			<span style="float: right;font-size: 23px;margin-top: 40px;">发布价格：
+			<input type="text"  value="" style="float:right; width:80px; height:24px;margin-right: 30px;margin-top: 0px;border-radius: 15px;"/>
+			</span>
+		</div>
+		
+	</body>
+
+</html>

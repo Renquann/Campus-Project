@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+	</head>
+	<style type="text/css">
+		.body{
+			margin-top: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			margin: 10px;
+			justify-content: space-between;
+		}
+		.body1{
+			margin-top: 10px;
+		}
+		.body1 img{
+			width: 150px;
+			height: 150px;
+		}
+		.body1 button{
+			margin-left: 12px;
+			width: 55px;
+			border-radius: 10px;
+		}
+		
+	</style>
+
+	<body>
+		<script src="js/mui.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			function a(){
+				document.getElementById('body').removeChild(document.getElementById('body1'));
+				
+			}
+			function b(){
+				document.getElementById('body').removeChild(document.getElementById('body2'));
+				
+			}
+			function c(){
+				document.getElementById('body').removeChild(document.getElementById('body3'));
+				
+				
+			}
+		</script>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">管理</h1>
+			<span style="float: left; margin-top: 12px;font-size: 10px;">返回</span>
+		</header>
+		<div class="fabu"style="margin-top: 60px;text-align: center;">
+			<button type="button"style="margin-left: 0px;width: 80px; background-color: #C7C7CC;border-radius: 20px;">发布</button>
+			<a href="guanli2.html">
+				<button type="button"style="width: 80px;border-radius: 20px;margin-left: 10px;">接收</button>
+			</a>
+		</div>
+		<div class="body" id="body">
+			<div class="body1"style="width: 45%;"id="body1">
+				<img src="img/a%20(2).png">
+				<button type="button">修改</button>
+				<button type="button"style="border: red solid 1px;" onclick="a()">删除</button>
+			</div>
+			<div class="body1"style="width: 45%;"id="body2">
+				<img src="img/a%20(3).png">
+				<button type="button">修改</button>
+				<button type="button"style="border: red solid 1px;"onclick="b()">删除</button>
+			</div>
+			<div class="body1"style="width: 45%;"id="body3">
+				<img src="img/zdh.png">
+				<button type="button">修改</button>
+				<button type="button"style="border: red solid 1px;"onclick="c()">删除</button>
+			</div>
+		</div>
+		
+		
+	</body>
+
+</html>

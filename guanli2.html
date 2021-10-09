@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+	</head>
+	<style type="text/css">
+		.body1{
+			margin-top: 5px;
+			margin-bottom: 10px;
+		}
+		.body2{
+			border: gray solid 0.05px;
+			border-radius: 15px;
+			margin-top: 10px;
+			background-color: snow;
+			height: 165px;
+			margin-left: 4px;
+			margin-right: 4px;
+			margin-bottom: 4px;
+		}
+		.body2 img{
+			height: 80px;
+			width: 80px;
+			border-radius: 50%;
+			margin-top: 40px;
+		}
+		.body2 button{
+			float: right;
+			margin-right:12px;
+			width: 70px;
+			border-radius: 50px;
+			margin-top: 18px;
+		}
+		.xinxi{
+			margin-left: 95px;
+			margin-top: 55px;
+			font-size: 15px;
+		}
+	</style>
+	<body>
+		<script src="js/mui.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			function a(){
+				document.getElementById('body').removeChild(document.getElementById('body1'));
+				
+			}
+			function b(){
+				document.getElementById('body').removeChild(document.getElementById('body2'));
+				
+			}
+			function c(){
+				document.getElementById('body').removeChild(document.getElementById('body3'));
+				
+				
+			}
+			function d(){
+				document.getElementById('body').removeChild(document.getElementById('body4'));
+				
+			}
+		</script>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">管理</h1>
+			<span style="float: left; margin-top: 12px;font-size: 10px;">返回</span>
+		</header>
+		<div class="fabu"style="margin-top: 60px;">
+			<button type="button"style="margin-left: 100px;width: 80px; border-radius: 10px;">发布</button>
+			<button type="button"style="margin-left: 10px; width: 80px; background-color: #C7C7CC; border-radius: 10px;">接收</button>
+		</div>
+		<div class="body1" id="body">
+		<div class="body2" id="body1">
+			<img src="img/a%20(2).png" class="mui-media-object mui-pull-left">
+			<div class="neirong">
+				<div class="xinxi">
+					<h3>车厘子</h3>
+					<span1>¥:36</span>
+				</div>
+			</div>
+			<button type="button"style="border: red solid 1px;"onclick="a()">删除</button>
+		</div>
+		<div class="body2" id="body2">
+			<img src="img/zdh.png" class="mui-media-object mui-pull-left">
+			<div class="neirong">
+				<div class="xinxi">
+					<h3>电脑维修</h3>
+					<span>¥:45</span>
+				</div>
+			</div>
+			<button type="button"style="border: red solid 1px;"onclick="b()">删除</button>
+			
+		</div>
+		<div class="body2" id="body3">
+			<img src="img/t012c839f62618c83f9.png" class="mui-media-object mui-pull-left">
+			<div class="neirong">
+				<div class="xinxi">
+					<h3>洗发水</h3>
+					<span>¥:33</span>
+				</div>
+			</div>
+			<button type="button"style="border: red solid 1px;" onclick="c()">删除</button>
+			
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+	</head>
+	<style type="text/css">
+		.mui-table-view img{
+			margin-top: 35px;
+			width: 50px;
+			height: 50px;
+		}
+		.mui-table-view div{
+			margin-top: 35px;
+			margin-left: 70px;
+		}
+		.mui-media-object{
+			border-radius: 20px;
+		}
+	</style>
+	<body>
+		<script src="js/mui.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">我关注的人</h1>
+			<span style="float: left; margin-top: 12px;font-size: 10px;">返回</span>
+			<div class="mui-input-row mui-search">
+				<input type="search" class="mui-input-clear" placeholder="搜索备注/姓名" >
+			</div>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="img/a%20(4).png">
+						<div class="mui-media-body">
+							企鹅
+							<p class="mui-ellipsis">...</p>
+							<button type="button" style="float: right;border-radius: 25px;border: #808080 solid 1px;">已关注</button>
+						</div>
+						
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="img/生肖牛.png">
+						<div class="mui-media-body">
+							风
+							<p class="mui-ellipsis">~~~</p>
+								<button type="button" style="float: right;border-radius: 25px;border: #808080 solid 1px;">已关注</button>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="img/生肖兔.png">
+						<div class="mui-media-body">
+							滴滴
+							<p class="mui-ellipsis">0.0</p>
+								<button type="button" style="float: right;border-radius: 25px;border: #808080 solid 1px;">已关注</button>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</header>
+	</body>
+
+</html>

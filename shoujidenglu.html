@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			.header{
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				background-color: cornflowerblue;
+				border-bottom: solid 2px red;
+			}
+			.header .title{
+				
+				font-family: 微软雅黑;
+				font-size: 60px;
+				color: white; 
+				width: 100%;
+				height: 100px;
+				text-align: center;
+				margin-top: 35px;
+			}
+			.header .back{
+				font-size: 80px;
+				color: white;
+				float: left;
+				line-height: 150px;
+				margin-left: 5px;
+			}
+			.body{
+				margin-top: 200px;
+			}
+			.body .buttons{
+				margin: 40px auto;
+				padding: 20px;
+				width: 80%;
+				display: table;
+				
+			}
+			.body .buttons div{
+				display: table-cell;
+				height: 130px;
+				text-align: center;
+				vertical-align: middle;
+				font-size: 70px;
+				color: chartreuse;
+				border: solid 2px black;
+			}
+			.body .buttons .active{
+				background-color: coral;
+				color: white;
+				text-decoration: underline;
+				text-align: center;
+				letter-spacing: 10px;
+			}
+			.form{
+				
+				height:850px;
+			}
+			.form form{
+				margin-left: 20px;
+				margin-right: 35px;
+				margin-top: 230px;
+			}
+			.body .form div{
+				height: 110px;
+				overflow: hidden;
+				border: solid 1px black;
+				padding: 20px;
+				margin-bottom: 35px;
+				
+			}
+			.body .form div label{
+				display: inline-block;
+				width: 170px;
+				height: 75px;
+				font-size: 40px;
+				float: left;
+				text-align: left;
+				margin-top: 35px;
+				
+			}
+			
+			.body .form input{
+				margin-left:15px;
+				margin-top: 30px;
+				font-size: 50px;
+				width:55%;
+				height: 55px;
+				border-width: 3px;
+			}
+			.body .form .submit{
+				clear: both;
+				background-color: aqua;
+				width: 40%;
+				font-family: 微软雅黑;
+				font-size: 50px;
+				color: white; 
+				margin: 40px auto;
+				height: 80px;
+				text-align: center;
+				margin-left: 300px;
+			}
+			.login3{
+				padding: 20px;
+			}
+			.login3 h3{
+				font-size: 80px;
+				text-align: center;
+			}
+			.login3 .btns{
+				height: auto;
+				width: 100%;
+				margin: 20px auto;
+				display: table;
+				vertical-align: middle;
+			}
+			.login3 .btn{
+				display: table-cell;
+				text-align: center;
+				font-size: 10px;
+			}
+			.login3 .btns i{
+				display: inline-block;
+				background-size: cover;
+				border-radius: 60%;
+				width: 80px;
+				height: 80px;
+			}
+			.login3 .btns h4{
+				font-size: 30px;
+			}
+			.login3{
+				width: 90%;
+			}
+			.login3 h3{
+				font-size: 35px;
+			}
+			.zhanghaodenglu{
+				font-size: 35px;
+			}
+		</style>
+		<script type="text/javascript">
+			function zhuce(){
+				window.open("zhuce.html");
+			}
+		</script>
+	</head>
+	<body>
+		<header class= "header">
+			<span id="back" class="back">&lt;</span>
+			<h1 class="title">登录和注册</h1>
+		</header>
+		<div class="body">
+			<div class="buttons">
+				<div id="loginbtn"  class="active">登录 </div>
+				<div id="regvtn" onclick="zhuce()">注册 </div>
+			</div>
+			<div class="form">
+				<form action="" method="post">
+					<div class="num">
+						<label for="nummer">手机号码:</label>
+						<input type="text" id="nummer" value=""/>
+					</div>
+					<div class="yanzhengma">
+						<label for="yanzhengma">验证码 :</label>
+						<input type="text" id="yanzhengma" value=""/>
+						<button type="button" style="font-size: 30px ;height: 90px;width: 180px;float: right;"> 重新发送，等待30s</button>
+					</div>
+					<a href="yonghudenglu.html" class="zhanghaodenglu">
+						<p>账号登录</p>
+					</a>
+				</form>
+				<a href="shouye1.html">
+					<input type="submit" class="submit" value="登录" style="border-radius: 60px;"/>
+				</a>
+			</div>
+			<div class="login3">
+				<h3>第三方快速登录</h3>
+				<div class="btns">
+					<div class="btn">
+						<i style="background-image: url(img/wheat.jpg);"></i>
+						<h4>微信</h4>
+					</div>
+					<div class="btn">
+						<i style="background-image: url(img/qq.jpg);"></i>
+						<h4>QQ</h4>
+					</div>
+					<div class="btn">
+						<i style="background-image: url(img/weibo.jpeg)"></i>
+						<h4>微博</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

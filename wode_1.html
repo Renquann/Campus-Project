@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="css/mui.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	<style type="text/css">
+		*{
+			padding: 0px;
+			margin: 0px;
+			list-style-type: none;
+			text-decoration: none;
+		}
+		.header{
+			position: fixed;
+			left: 0px;
+			right: 0px;
+			top: 0px;
+			height: 30px;
+			background-color: gainsboro;
+			
+		}
+		
+		.header #shezhi{
+			float: right;
+			margin-top: 5px;
+		}
+		.main-nav{
+			position: fixed;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+			background-color: gainsboro;
+		}
+		.main-nav ul{
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+		}
+		.main-nav ul i{
+			font-size: 40px;
+			line-height: 50px;
+		}
+		.main-nav ul button{
+			font-size: 25px;
+			display: block;
+			width: 80%;
+			
+		}
+		.main-nav li{
+			text-align: center;
+		}
+		a{
+			color: #000000;
+		}
+		.ball{
+			border-radius: 50px;
+			padding: 5px;
+			font-size: 15px;
+			line-height: 5px;
+			margin-top:5px;
+			margin-right: 0px;
+			float: right;
+			background-color: red;
+			color: white;
+		}
+		.body{
+			height: 110px;
+			width: 100%;
+		}
+		.body .username{
+			background-color: white;
+			margin-top: 60px;
+			justify-content: center;
+		}
+		.body .username .touxiang{
+			width: 100px;
+			height: 100px;
+			border-radius: 50px;
+			background-image: url(img/家.png);
+			background-size: cover;
+			float: left;
+			margin:10px;
+			
+		}
+		
+		.username .name{
+			font-size: 20px;
+			line-height: 50px;
+			color: black;
+			float: left;
+			margin: 10px;
+		}
+		.username .url{
+			font-size: 20px;
+			line-height: 5px;
+			color: black;
+			float: left;
+			margin: 15px;
+		}
+		
+		.username .info{
+			
+			height: 70px;
+			font-size: 20px;
+			display: flex;
+			clear: both;
+			text-align: center;
+			justify-content: space-around;
+		}
+		
+	</style>
+   <script type="text/javascript">
+   	function yonghuxinxi(){
+		window.open("yonghuxinxi.html");
+	}
+	function shezhi(){
+		window.open("jibenshezhi.html")
+	}
+   </script>
+</head>
+<body>
+	<header class="header">
+		<span id="shezhi" class="iconfont icon-shezhi" onclick="shezhi()"></span>
+	</header>
+	<nav class="mui-bar mui-bar-tab">
+		<a class="mui-tab-item" href="shouye1.html">
+			<span class="mui-icon mui-icon-home"></span>
+			<span class="mui-tab-label">首页</span>
+		</a>
+		<a class="mui-tab-item" href="xiaoxi.html">
+			<span class="mui-icon mui-icon-email "></span>
+			<span class="mui-tab-label">消息</span>
+		</a>
+		<a class="mui-tab-item  mui-active">
+			<span class="mui-icon mui-icon-gear "></span>
+			<span class="mui-tab-label">我的</span>
+		</a>
+	</nav>
+	<div class="body">
+		<div class="username" onclick="yonghuxinxi()">
+			<span class="touxiang "></span>
+			<span class="name">用户名：风</span>
+			<span class="url ">Id:32153213</span>
+		<div class="info" >
+			<a href="shoucang.html">
+				<span>
+					<i>16</i>
+					<p>收藏</p>
+				</span>
+			</a>
+			
+			<a href="zuji.html">
+				<span>
+					<i>96</i>
+					<p>足迹</p>
+				</span>
+			</a>
+			
+			<a href="guanzhu.html">
+				<span>
+					<i>6</i>
+					<p>关注</p>
+				</span>
+			</a>
+			
+			</div>
+		</div>
+	</div>
+	<ul class="mui-table-view mui-grid-view"style="margin-top: 100px; height: 250px;text-align: center;">
+		<li class="mui-table-view-cell mui-media mui-col-xs-6" style="margin-top: 50px;">
+			<a href="fabu.html">
+				<img class="mui-media-object" src="http://placehold.it/400x300">
+				<div class="mui-media-body">发布</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-6"style="margin-top: 50px;">
+			<a href="guanli.html">
+				<img class="mui-media-object" src="http://placehold.it/400x300">
+				<div class="mui-media-body">管理</div>
+			</a>
+		</li>
+	</ul>
+</body>
+</html>

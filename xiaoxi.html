@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+	
+	</head>
+	<style type="text/css">
+		.mui-media-body{
+			margin-top: 20px;
+		}
+		.mui-table-view img{
+			margin-top: 20px;
+		}
+		.mui-table-view-cell{
+			margin-top: 0px;
+		}
+	</style>
+	<body>
+		<script src="js/mui.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			function shouye(){
+				window.open("shouye1.html");
+			}
+			function wode(){
+				window.open("wode_1.html");
+			}
+			function liaotianjiemian(){
+				window.open("liaotianjiemian.html");
+			}
+			function jiahaoyou(){
+				window.open("jiahaoyou.html")
+			}
+		</script>
+		<header class="mui-bar mui-bar-nav">
+			<h4 style="float: left; margin-top: 15px;">众事</h4>
+			<div >
+				<a href="jiahaoyou.html">
+				<span class="mui-icon mui-icon-plus" style="float: right;margin: 0px;">
+					
+				</span>
+				</a>
+			</div>
+			
+			<span class="mui-icon mui-icon-search" style="float: right;margin: 0xp;"></span>
+		</header>
+		<nav class="mui-bar mui-bar-tab" >
+			<a class="mui-tab-item " >
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label" onclick="shouye()">首页</span>
+			</a>
+			<a class="mui-tab-item mui-active" >
+				<span class="mui-icon mui-icon-email"></span>
+				<span class="mui-tab-label">消息</span>
+			</a>
+			<a class="mui-tab-item">
+				<span class="mui-icon mui-icon-gear"></span>
+				<span class="mui-tab-label" onclick="wode()">我的</span>
+			</a>
+		</nav>
+		<ul class="mui-table-view" style="margin-top: 50px;">
+			<li class="mui-table-view-cell mui-media" >
+				<a href="liaotianjiemian.html">
+					<img class="mui-media-object mui-pull-left" src="img/a%20(4).png" style="border-radius: 50%;">
+					<div class="mui-media-body">
+						企鹅
+						<p class="mui-ellipsis">你好</p>
+					
+						<span style="float: right;">1:20</span>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a href="liaotianjiemian.html">
+					<img class="mui-media-object mui-pull-left" src="img/生肖牛.png" style="border-radius: 50%;">
+					<div class="mui-media-body">
+						风
+						<p class="mui-ellipsis">嗨！</p>
+				
+					<span style="float: right;">1:50</span>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a href="liaotianjiemian.html">
+					<img class="mui-media-object mui-pull-left" src="img/生肖兔.png" style="border-radius: 50%;">
+					<div class="mui-media-body">
+						滴滴
+						<p class="mui-ellipsis">在吗？</p>
+				
+					<span style="float: right;">3:20</span>
+					</div>
+				</a>
+			</li>
+			
+			
+		</ul>
+	</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+	</head>
+	<style type="text/css">
+		.body1{
+			margin-top: 55px;
+			margin-bottom: 10px;
+		}
+		.body2{
+			border: gray solid 0.1px;
+			border-radius: 15px;
+			margin-top: 10px;
+			background-color: white;
+			height: 168px;
+			margin-left: 4px;
+			margin-right: 4px;
+			margin-bottom: 4px;
+		}
+		.body2 img{
+			height: 80px;
+			width: 80px;
+			border-radius: 50%;
+			margin-top: 40px;
+		}
+		.body2 button{
+			float: right;
+			margin-right:8px;
+			width: 70px;
+			border-radius: 50px;
+			margin-top: 0px;
+		}
+		.xinxi{
+			margin-left: 95px;
+			margin-top: 45px;
+			font-size: 15px;
+		}
+		.xinxi p{
+			font-size: 10px;
+		}
+		</style>
+	<body>
+		<script src="js/mui.js"></script>
+		<script type="text/javascript">
+			function a(){
+				document.getElementById('body').removeChild(document.getElementById('body1'));
+				
+			}
+			function b(){
+				document.getElementById('body').removeChild(document.getElementById('body2'));
+				
+			}
+			function c(){
+				document.getElementById('body').removeChild(document.getElementById('body3'));
+				
+				
+		</script>
+		<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-title">我的收藏</h1>
+		<span style="float: left; margin-top: 12px;font-size: 13px;">返回</span>
+	</header>
+	<div class="body1"id="body">
+	<div class="body2"id="body1">
+		<img src="img/a%20(2).png" class="mui-media-object mui-pull-left">
+		<div class="neirong">
+			<div class="xinxi">
+				<h3>车厘子</h3>
+				<span>新鲜车厘子</span>
+				<p>100+收藏</p>
+			</div>
+		</div>
+		<button type="button"style="border: red solid 1px;"onclick="a()">删除</button>
+		<button type="button">找相似</button>
+	</div>
+	<div class="body2"id="body2">
+		<img src="img/zdh2.png" class="mui-media-object mui-pull-left">
+		<div class="neirong">
+			<div class="xinxi">
+				<h3>PS</h3>
+				<span>专业ps</span>
+				<p>100+收藏</p>
+			</div>
+		</div>
+		<button type="button"style="border: red solid 1px;"onclick="b()">删除</button>
+		<button type="button">找相似</button>
+	</div>
+	<div class="body2" id="body3">
+		<img src="img/zdh.png" class="mui-media-object mui-pull-left">
+		<div class="neirong">
+			<div class="xinxi">
+				<h3>电脑维修</h3>
+				<span>专业电脑维修</span>
+				<p>100+收藏</p>
+			</div>
+		</div>
+		<button type="button"style="border: red solid 1px;"onclick="c()">删除</button>
+		<button type="button">找相似</button>
+	</div>
+	</body>
+
+</html>

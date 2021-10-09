@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+		<style type="text/css">
+			
+			*{
+				margin: 0px;
+				padding: 0px;
+				list-style-type: none;
+			}
+			.lunbo{
+				width: 100%;
+				height: 120px;
+				position: relative;
+			}
+			.lunbo .contents li{
+				display: none;  //隐藏
+				width: 70%;
+				height: 100px;
+			}
+			.lunbo .contents li.active{
+				display: block;  //激活隐藏
+			}
+			.lunbo .btns li{
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				border: 0.4px solid black;
+				background-color: white;
+				color: red;
+				font-size: 15px;
+				text-align: center;
+				line-height: 20px;
+				margin: 5px;
+				float: left;
+				
+			}
+			.lunbo .btns{
+				position: relative;
+				bottom: 5px;
+				left: 50%;
+				margin-left: -65px;
+				display: flex;
+			}
+			.lunbo .btns li.active{
+				background-color: red;
+				color: white;
+				flex-direction: row;
+			}
+			.sousuo{
+				display: flex;
+				flex: row;
+				justify-content: space-around;
+				border-bottom: #909090 solid 2px;
+				
+			}
+			.sousuo img{
+				height: 20px;
+				border-radius: 80%;
+				margin-top: 10px;
+				
+			}
+			.sousuo .saosuo{
+				width: 190px;
+				height: 22px;
+				margin-top: 8px;
+				padding-left: 10px;
+			}
+			.sousuo .tijiao{
+				margin-top: 6px;
+				height: 25px;
+			}
+			.fenlei{
+				display: flex;
+				flex: row;
+				justify-content: space-around;
+				width: 100%;
+				height: 35px;
+			}
+			.fenlei .lei{
+				font-size: 15px;
+				border-radius: 10px;
+				text-align: center;
+				width: 55px;
+				height: 20px;
+				margin: 10px;
+			}
+			.mui-table-view-cell img{
+				width: 50px;
+				height: 50px;
+			}
+			.mui-ellipsis{
+				text-align: right;
+			}
+		</style>
+		<script src="jquery-3.6.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var index=0;
+			$(function(){
+				$(".lunbo .btns li").click(function(){
+					index=$(".lunbo .btns li").index(this);
+					$(".lunbo .btns li").removeClass("active");
+					$(".lunbo .btns li:eq("+index+")").addClass("active");
+					$(".lunbo .contents li").removeClass("active");
+					$(".lunbo .contents li:eq("+index+")").addClass("active");
+				});
+				var timer=setInterval(function(){
+					index=$(".lunbo .btns li").index($(".lunbo .btns li[class*='active']"));
+					var tottle=$(".lunbo .btns li").length;
+					index=(index>=tottle-1?0:index+1);
+					$(".lunbo .btns li").removeClass("active");
+					$(".lunbo .btns li:eq("+index+")").addClass("active");
+					$(".lunbo .contents li").removeClass("active");
+					$(".lunbo .contents li:eq("+index+")").addClass("active");
+				},2000);
+		})
+				
+			function sousuo(){
+				window.open("sousuo.html");
+			}
+		</script>
+
+	</head>
+	<body>
+		<!-- 搜索 -->
+		<div class="sousuo">
+			<div class="flex-sousuo"><img src="img/people.png"></div>
+			<div class="flex-sousuo"><input type="text" class="saosuo" value="请输入" onclick="sousuo()"></div>
+			<div class="flex-sousuo"><input type="submit" id="" name="" class="tijiao" value="搜索"/></div>
+			
+		</div>
+		<!-- 轮播图 -->
+		<div class="lunbo">
+			
+			<ul class="contents">
+				<li class="active"><a href="#"><img src="img/jinzhengen.jpg" style="width: 100%;height: 100%;" ></a></li>
+				<li><a href="#"><img src="img/tianqiyubao.jpg" style="width: 100%;height: 100%;" ></a></li>
+				<li><a href="#"><img src="img/shenghuo.png" style="width: 100%;height: 100%;" ></a></li>
+				<li><a href="#"><img src="img/xinwenlianbo.jpg" style="width: 100%;height: 100%;" ></a></li>
+			</ul>
+			<ul class="btns">
+				<li class="active">1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+			</ul>
+		</div>
+		<!-- 底部导航栏 -->
+		<nav class="mui-bar mui-bar-tab">
+			
+			<a class="mui-tab-item mui-active">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" href="xiaoxi.html">
+				<span class="mui-icon mui-icon-email"></span>
+				<span class="mui-tab-label">消息</span>
+			</a>
+			<a class="mui-tab-item" href="wode_1.html">
+				<span class="mui-icon mui-icon-gear"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
+		<div class="fenlei">
+			<a href="shouye1.html">
+			<div class="lei" style="background-color: #DDDDDD">生活类</div>
+			</a>
+			<a href="shouye2.html">
+				<div  id="gongzuo" class="lei" >工作类</div>
+			</a>
+			<a href="shouye3.html">
+				<div class="lei" >资源类</div>
+			</a>
+			
+		</div>
+		<div class="mui-table-view">
+			<li class="mui-table-view-cell mui-media">
+				<a href="xiangqing.html">
+					<div id="">
+						<img class="mui-media-object mui-pull-left" src="img/a%20(2).png">
+					</div>
+					<div class="mui-media-body">
+						车厘子
+						<p class="mui-ellipsis">¥：36.8元</p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a href="xiangqing.html">
+					<div>
+						<img class="mui-media-object mui-pull-left" src="img/a%20(3).png">
+					</div>
+					<div class="mui-media-body">
+						水果
+						<p class="mui-ellipsis">¥：8.8元</p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a href="xiangqing.html">
+					<div>
+						<img class="mui-media-object mui-pull-left" src="./img/t012c839f62618c83f9.png">
+					</div>
+					<div class="mui-media-body">
+						洗发水
+						<p class="mui-ellipsis">¥：34.8元</p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a href="xiangqing.html">
+					<div>
+						<img class="mui-media-object mui-pull-left" src="img/tianqiyubao.jpg">
+					</div>
+					<div class="mui-media-body">
+						洗衣液
+						<p class="mui-ellipsis">¥：36元</p>
+					</div>
+				</a>
+			</li>
+		</div>
+	</body>
+</html>
